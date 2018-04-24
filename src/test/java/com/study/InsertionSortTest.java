@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class BubbleSortTest {
+public class InsertionSortTest {
 
     private int[] testArray;
     private int[] sortedArray;
@@ -17,9 +17,8 @@ public class BubbleSortTest {
     }
 
     @Test
-    public void sortTest() {
-        BubbleSort.sort(testArray);
+    public void sort() {
+        InsertionSort.sort(testArray);
         assertArrayEquals(sortedArray, testArray);
     }
-
 }
