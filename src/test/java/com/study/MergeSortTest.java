@@ -3,9 +3,7 @@ package com.study;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class MergeSortTest {
 
@@ -21,6 +19,6 @@ public class MergeSortTest {
     @Test
     public void sortTest() {
         MergeSort.sort(testArray);
-        System.out.println(Arrays.toString(testArray));
+        assertArrayEquals(sortedArray, testArray);
     }
 }

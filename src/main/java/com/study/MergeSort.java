@@ -4,7 +4,8 @@ public final class MergeSort {
 
     private static int[] aux;
 
-    private MergeSort() {}
+    private MergeSort() {
+    }
 
     public static void sort(int[] array) {
         aux = new int[array.length];
